@@ -13,12 +13,16 @@
       const card = document.createElement('div');
       card.className = 'product';
       const imgSrc = p.image && p.image.trim() ? p.image : 'images/placeholder.png';
-      card.innerHTML = `
-        <img src="${imgSrc}" alt="${p.name || 'Product'}"/>
-        <h3>${p.name || 'Unnamed product'}</h3>
-        <p>${p.price ? toNGN(p.price) : ''}</p>
-        <button type="button">Add to Cart</button>
-      `;
+       card.innerHTML = `
+  <img src="${imgSrc}" alt="${p.name || 'Product'}"/>
+  <h3>${p.name || 'Unnamed product'}</h3>
+  <p class="price">${p.price ? toNGN(p.price) : ''}</p>
+  <p class="desc">${p.description || ''}</p>
+  <div class="actions">
+    <button class="btn primary">Add to Cart</button>
+    <button class="btn secondary">Wishlist</button>
+  </div>
+`;
       container.appendChild(card);
     });
   }
