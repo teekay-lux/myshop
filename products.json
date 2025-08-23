@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "name": "Chocolate Chip Cookie",
+      "price": 1500,
+      "image": "images/cookie1.jpg"
+    },
+    {
+      "name": "Oatmeal Cookie",
+      "price": 1200,
+      "image": "images/cookie2.jpg"
+    }
+  ]
+}
