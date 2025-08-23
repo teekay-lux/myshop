@@ -1,17 +1,21 @@
 backend:
   name: git-gateway
-  branch: main   # Change to "master" if your repo uses master branch
+  branch: main   # or master, depending on your repo branch
 
-media_folder: "images"       # Where uploaded images go
-public_folder: "/images"     # How they will be linked in JSON
+media_folder: "images"      # Where uploaded images are stored in the repo
+public_folder: "/images"    # How images are accessed in the site
 
 collections:
   - name: "products"
     label: "Products"
-    label_singular: "Product"
-    file: "products.json"    # This is the JSON file CMS will edit
-    format: json
-    fields:
-      - { name: "name", label: "Product Name", widget: "string" }
-      - { name: "price", label: "Price", widget: "number" }
-      - { name: "image", label: "Image", widget: "image" }
+    files:
+      - file: "products.json"
+        label: "Product List"
+        name: "productlist"
+        fields:
+          - { label: "Products", name: "products", widget: "list", fields: [
+              { label: "Product Name", name: "name", widget: "string" },
+              { label: "Price", name: "price", widget: "number" },
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Description", name: "description", widget: "text" }
+            ] }
