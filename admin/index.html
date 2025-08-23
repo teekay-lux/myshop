@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Content Manager</title>
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <!-- Netlify Identity widget is required for Netlify CMS auth when using Identity + Git Gateway -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/netlify-cms@^2.0/dist/netlify-cms.js"></script>
+  <script>
+    // If a user logs in via the identity widget on a non-admin page, redirect them to /admin/
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
