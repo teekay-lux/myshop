@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Israel Cookie Company</title>
+  <title>Teekay Lux</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
@@ -62,7 +65,8 @@
                 <p>Handcrafted precision for the discerning individual</p>
             </div>
             <div class="products-grid" id="products-container">
-                <!-- Products will be loaded here from products.json -->
+                <!-- Products will be loaded here from products.json --> <div id="product-list" aria-live="polite"></div>
+  
             </div>
         </div>
     </section>
@@ -72,21 +76,24 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>About Teekay Lux</h2>
-                    <p>Founded in 2023, Teekay Lux represents the pinnacle of watchmaking craftsmanship. Each timepiece is a testament to our dedication to quality, precision, and timeless design.</p>
-                    <p>Our watches are more than just instruments to tell time - they are heirlooms, statements of personal style, and symbols of achievement.</p>
+                    <p>Welcome to Teekay<span style="color:#d4af37">Lux</span>, your go-to destination for premium wristwatches in Ekiti State, Nigeria. Since opening our doors in 2025, we have been dedicated to bringing timeless style, quality, and elegance to watch lovers across the region.</p>
+         
+<p> Our carefully curated collection features a range of timepieces to suit every taste from sleek everyday watches to bold statement pieces, and the perfect gift for someone special. Each watch is selected with attention to detail and a commitment to quality, ensuring that you receive only the best</p>                       <p>Our watches are more than just instruments to tell time - they are heirlooms, statements of personal style, and symbols of achievement.</p>
                     <p>We source only the finest materials and employ master watchmakers to create pieces that will be treasured for generations.</p>
+<p>Since our launch, we have been focused on building strong relationships with our customers and community, delivering not only exceptional watches but also trust, convenience, and satisfaction with every purchase.
+
+Discover your next timepiece today at Teekay<span style="color:#d4af37">Lux</span> where timeless elegance meets effortless style.</p>
                     <a href="#collection" class="btn">Discover More</a>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1526045431048-859fd8befc8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="About Teekay Lux">
+                    <img src="images/teekay.jpg" alt="About Teekay Lux">
                 </div>
             </div>
         </div>
     </section>
 
-    <h2>Our Products</h2>
-    <div id="product-list" aria-live="polite"></div>
-  
+   
+   
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
@@ -96,15 +103,16 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card" data-aos="fade-up">
                     <div class="testimonial-content">
-                        <p>"The craftsmanship is exceptional. I've received countless compliments on my Teekay Chrono. It's definitely worth the investment."</p>
+                        <p>“Absolutely stunning watch. The quality is unmatched.”</p>
+      
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Robertson">
+                            <img src="images/profile.jpg" alt="Michael Robertson">
                         </div>
                         <div class="author-details">
-                            <h4>Michael Robertson</h4>
-                            <p>CEO, Tech Innovations</p>
+                            <h4>Daniel O.</h4>
+                            <p>Customer, from Lagos State.</p>
                         </div>
                     </div>
                 </div>
@@ -114,11 +122,11 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Lawson">
+                            <img src="images/profile.jpg" alt="Beauty Linda">
                         </div>
                         <div class="author-details">
-                            <h4>Sarah Lawson</h4>
-                            <p>Fashion Director</p>
+                            <h4>Joyce</h4>
+                            <p>Customer, From Abuja.</p>
                         </div>
                     </div>
                 </div>
@@ -128,17 +136,201 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="James Thompson">
+                            <img src="images/profile.jpg" alt="James Thompson">
                         </div>
                         <div class="author-details">
-                            <h4>James Thompson</h4>
-                            <p>Investment Banker</p>
+                            <h4>Yvonne</h4>
+                            <p>Customer, From Port-harcourt</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+<section class="collection-section">
+  <h2>Our Collection</h2>
+  <div class="collection-grid">
+    
+    <div class="item-box">
+      <img src="images/digital.jpg" alt="Digital Watch">
+      <h3>Digital Watches</h3>
+      <p>Stylish and modern designs.</p>
+    </div>
+
+    <div class="item-box">
+      <img src="images/expensive.jpg" alt="Rolex Watch">
+      <h3>Rolex Watches</h3>
+      <p>Luxury timepieces with elegance.</p>
+    </div>
+
+    <div class="item-box">
+      <img src="images/women.jpg" alt="Bracelet">
+      <h3>Women Bracelets</h3>
+      <p>Beautiful bracelets for every style.</p>
+    </div>
+
+    <div class="item-box">
+      <img src="images/gold.jpg" alt="High Budget Watch">
+      <h3>High Budget Watches</h3>
+      <p>Premium watches for exclusive taste.</p>
+    </div>
+
+    <div class="item-box">
+      <img src="images/lowbuget.jpg" alt="Low Budget Watch">
+      <h3>Low Budget Watches</h3>
+      <p>Affordable watches for everyone.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.collection-section {
+  background: #d4e8d9; /* light green */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.collection-section h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 50px;
+  animation: fadeDown 1s ease-in-out;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.item-box {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.item-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.item-box h3 {
+  font-size: 20px;
+  color: #000;
+  margin: 15px 0 5px;
+}
+
+.item-box p {
+  color: rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.item-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<section class="features-section">
+  <div class="feature">
+    <div class="icon-circle">
+      <i class="fas fa-credit-card"></i>
+    </div>
+    <h3>Secure Payment</h3>
+    <p>Shop safe. Shop smart. Pay securely.</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon-circle">
+      <i class="fas fa-bus"></i>
+    </div>
+    <h3>Discount</h3>
+    <p>Exclusive deals every time.</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon-circle">
+      <i class="fas fa-box"></i>
+    </div>
+    <h3>Delivered with Care</h3>
+    <p>Carefully packed with love.</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon-circle">
+      <i class="fas fa-heart"></i>
+    </div>
+    <h3>Made with Love</h3>
+    <p>Your happiness is our priority.</p>
+  </div>
+</section>
+
+<style>
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  color: #000;
+  padding: 50px 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 220px;
+  margin: 20px;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 30px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  background: #000;
+  color: #fff;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6); /* lighter black */
+}
+</style>
+
+
 
     <section class="contact" id="contact" data-aos="fade-up">
         <div class="container">
@@ -166,7 +358,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Teekay Lux</h3>
-                    <p>Timeless elegance for the modern individual. Crafting luxury watches since 2023.</p>
+                    <p>Timeless elegance for the modern individual. Crafting luxury watches.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -180,15 +372,15 @@
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.instagram.com/de_tee_kay?igsh=MThhb3p2YzFpNnl5eQ=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/14aXqqC9YY/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/MrAdedigba001?t=VdfbHM_VFHj3RCyPEipTAA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@teekay_001?_t=ZM-8ukC9BiaK5n&_r=1"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Teekay Lux. All rights reserved.</p>
+                <p>&copy; 2025 Teekay Lux. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -218,6 +410,24 @@
             </div>
         </div>
     </div>
+<!-- Floating buttons -->
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h2>Shopping Cart</h2>
+    <button class="close-btn" data-target="cart-sidebar">✖</button>
+  </div>
+  <div id="cart-items" class="sidebar-content"></div>
+</div>
+
+<!-- Wishlist Sidebar -->
+<div id="wishlist-sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h2>Wishlist</h2>
+    <button class="close-btn" data-target="wishlist-sidebar">✖</button>
+  </div>
+  <div id="wishlist-items" class="sidebar-content"></div>
+</div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -272,51 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
 
-            // Sample products data (would normally come from products.json)
-            const products = [
-                {
-                    id: 1,
-                    name: "Teekay Chrono",
-                    price: 350,
-                    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1099&q=80",
-                    description: "Luxury chronograph watch with precision movement and sapphire crystal."
-                },
-                {
-                    id: 2,
-                    name: "Teekay Classic",
-                    price: 275,
-                    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-                    description: "Timeless elegance with a minimalist design and genuine leather strap."
-                },
-                {
-                    id: 3,
-                    name: "Teekay Diver",
-                    price: 420,
-                    image: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    description: "Professional diving watch with 200m water resistance and luminescent markers."
-                },
-                {
-                    id: 4,
-                    name: "Teekay GMT",
-                    price: 390,
-                    image: "https://images.unsplash.com/photo-1547996160-81dfa11a4a2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-                    description: "Dual timezone watch for the global traveler with 24-hour bezel."
-                },
-                {
-                    id: 5,
-                    name: "Teekay Heritage",
-                    price: 450,
-                    image: "https://images.unsplash.com/photo-1612786143266-b036811a6f28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    description: "Vintage-inspired timepiece with hand-wound mechanical movement."
-                },
-                {
-                    id: 6,
-                    name: "Teekay Skeleton",
-                    price: 500,
-                    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    description: "Exquisite skeleton design revealing the intricate mechanical movement."
-                }
-            ];
+           
 
             // Display products
             displayProducts(products);
