@@ -5,6 +5,12 @@
       "price": 200,
       "image": "/images/aditya-sethia-eSHeT143Y2s-unsplash.jpg",
       "description": "Best watch "
+    },
+    {
+      "name": "Apple ",
+      "price": 300,
+      "image": "https://i.postimg.cc/kgb3hd0p/IMG-9357.webp",
+      "description": "Good "
     }
   ]
 }
