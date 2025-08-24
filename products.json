@@ -1,10 +1,14 @@
 {
   "products": [
     {
-      "name": "Rolex",
-      "price": 200,
-      "image": "/images/img_9345.webp",
-      "description": "So go do "
+      "name": "Chocolate Chip Cookie",
+      "price": 1500,
+      "image": "images/cookie1.jpg"
+    },
+    {
+      "name": "Oatmeal Cookie",
+      "price": 1200,
+      "image": "images/cookie2.jpg"
     }
   ]
 }
